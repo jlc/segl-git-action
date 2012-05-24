@@ -8,47 +8,16 @@ import scalala.tensor.dense.DenseMatrix
 class Git {
 
   def mult(M1: Array[Array[Double]], M2: Array[Array[Double]]): Array[Array[Double]] = {
-    val res = Array.fill(M1.length, M2(0).length)(0.0)
-
-    for (row <- (0 until M1.length);
-         col <- (0 until M2(0).length);
-         i <- 0 until M1(0).length) {
-
-      res(row)(col) += M1(row)(i) * M2(i)(col)
-
-    }
-
-    res
   }
 
   def multWiki(M1: Array[Array[Double]], M2: Array[Array[Double]]): Array[Array[Double]] = {
-    for (row <- M1)
-    yield for (col <- M2.transpose)
-    yield row zip col map Function.tupled(_ * _) reduceLeft (_ + _)
   }
 
 
   def multImper(M1: Array[Array[Double]], M2: Array[Array[Double]]): Array[Array[Double]] = {
-
-    val n: Int = M1(0).length
-    val m: Int = M1.length
-    val p: Int = M2(0).length
-
-    val res = Array.fill(M1.length, M2(0).length)(0.0)
-
-    for (i <- 0 until m) {
-      for (j <- 0 until p) {
-        for (k <- 0 until n) {
-          res(i)(j) += M1(i)(k) * M2(k)(j)
-        }
-      }
-    }
-    return res;
-
   }
 
   def multScalala(M1: DenseMatrix[Double], M2: DenseMatrix[Double]) = {
-    M1 * M2
   }
 
 }
