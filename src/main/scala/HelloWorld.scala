@@ -12,6 +12,8 @@ object HelloWorld {
     val ls2 = List(5,6,7,8)
     println(Ex2.nthBuiltin(2, ls2))
     println(Ex2.nthRecursive(2, ls2))
+
+    Git.test
   }
 }
 

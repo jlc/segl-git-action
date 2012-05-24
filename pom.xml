@@ -5,6 +5,17 @@
   <version>1.0.0</version>
 
   <repositories>
+    <repository>
+        <id>scala-tools.org</id>
+        <name>Scala-Tools Maven2 Repository</name>
+        <url>http://scala-tools.org/repo-snapshots</url>
+    </repository>
+
+    <repository>
+        <id>scalanlp.org</id>
+        <name>ScalaNLP Maven2 Repository</name>
+        <url>http://repo.scalanlp.org/repo</url>
+    </repository>
   </repositories>
 
   <dependencies>
@@ -12,6 +23,11 @@
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
       <version>2.9.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.scalala</groupId>
+        <artifactId>scalala_2.9.1</artifactId>
+        <version>1.0.0.RC2</version>
     </dependency>
   </dependencies>
 
