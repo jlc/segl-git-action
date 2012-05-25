@@ -1,0 +1,79 @@
+
+------------------------------------------------------------------
+
+        "Git in action"
+
+        Presentation at the Scala Enthusiast Group Lausanne
+
+        24th of May 2012
+
+        Time: 18h45 -> 21h30
+
+------------------------------------------------------------------
+
+Here are few comments / ideas regarding the presentation and how it may be improved.
+
+* Organization
+------------------------------------------------------------------
+
+- The first chapter about theory maybe shorten / more consice in order to start practicing earlier.
+
+- "Git first actions" may be shorten / split in order to cover only basic Git usages:
+  (init, clone, status, log, checkout, add, commit - push, pull?)
+
+- The second chapter about theory should come earlier in order to:
+  - complete what wasn't said in the first instance
+    (like cool git features such as cherry-pick, rebase, merge)
+  - satisfy users who already have experience: git internals and possible workflows
+
+- Maybe a last practice session covering rebase, merge - push, pull?
+  (at least explane the concepts)
+
+- Git graphical interfaces such as gitk should be presented at the end of the first chapter about theory
+
+* Content
+------------------------------------------------------------------
+
+- Introduce how we may work with git:
+  - clone -> commits -> commits -> merge/rebase -> push
+
+- Explain that we can rework the history (move commits, sqash, reword...)
+
+- List Git features such as rebase, merge, cherry-pick, sqash
+
+- List Common pitfall / real world usages:
+  - push, rewrite history and then re-push (and the warning that Git display)
+  - merge --no-ff (no fast-forward)
+
+
+* References Urls
+------------------------------------------------------------------
+
+- Linus Torvalds Google presentation:
+
+  http://www.youtube.com/watch?v=4XpnKHJAok8
+
+- Git for computer scientists:
+
+  http://eagain.net/articles/git-for-computer-scientists/
+
+- Github learn:
+
+  http://learn.github.com/p/intro.html
+
+- Git flow:
+
+  http://nvie.com/posts/a-successful-git-branching-model/
+
+- Git for real world:
+
+  http://robey.lag.net/2008/07/13/git-for-the-real-world.html
+
+- Distributed Git - Distributed workflows:
+
+  http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows
+
+- The stacey matrix:
+
+  http://www.gp-training.net/training/communication_skills/consultation/equipoise/complexity/stacey.htm
+
